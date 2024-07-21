@@ -1,0 +1,50 @@
+/* base.css - assumed to be already set up */
+
+/* styles.css */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+article, aside {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    body.works_on_smartphone {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    article {
+        flex: 2;
+        overflow-y: auto; /* Allow scrolling for smaller screens */
+    }
+
+    aside {
+        flex: 1;
+        overflow-y: auto; /* Allow scrolling for smaller screens */
+    }
+}
